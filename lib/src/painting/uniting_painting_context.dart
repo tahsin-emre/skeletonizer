@@ -236,6 +236,34 @@ class UnitingCanvas implements Canvas {
 
   @override
   void saveLayer(ui.Rect? bounds, ui.Paint paint) {}
+
+  /// Clips the canvas using a superellipse shape defined by [rect] and [n].
+  ///
+  /// The [doAntiAlias] parameter determines whether anti-aliasing is applied.
+  @override
+  void clipRSuperellipse(
+    Rect rect,
+    double n, {
+    bool doAntiAlias = true,
+  }) {
+    // Implementasyon buraya gelecek
+    // Örneğin:
+    // super.clipRSuperellipse(rect, n, doAntiAlias: doAntiAlias);
+  }
+
+  /// Draws a superellipse shape on the canvas defined by [rect] and [n].
+  ///
+  /// The [paint] parameter defines the style and color of the shape.
+  @override
+  void drawRSuperellipse(
+    Rect rect,
+    double n, {
+    Paint? paint,
+  }) {
+    // Implementasyon buraya gelecek
+    // Örneğin:
+    // super.drawRSuperellipse(rect, n, paint: paint);
+  }
 }
 
 /// A [PaintingContext] that unites all the painted rectangles.
